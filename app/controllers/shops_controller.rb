@@ -5,6 +5,18 @@ class ShopsController < ApplicationController
   # GET /shops.json
   def index
     @shops = Shop.all
+
+    @lats = []
+    @lngs = []
+    @names = []
+    @addresses = []
+
+    @shops.each do |shop|
+      @lats.push(shop.latitude)
+      @lngs.push(shop.longitude)
+      @names.push(shop.name)
+      @addresses.push(shop.address)
+    end
   end
 
   # GET /shops/1
