@@ -1,12 +1,4 @@
 <% cache(@shops) do %>
-  <% provide :head_tags do %>
-      <script>
-      document.addEventListener("DOMContentLoaded", function(){
-          initMap(<%=@lats.to_json.html_safe%>, <%=@lngs.to_json.html_safe%>, <%=@names.to_json.html_safe%>, <%=@categories.to_json.html_safe%>)
-      });
-      </script>
-  <% end %>
-
   <p id="notice"><%= notice %></p>
 
   <h1>Shops</h1>
