@@ -6,6 +6,7 @@ class ShopsController < ApplicationController
   def index
     @shops = Shop.all
 
+
     @lats = []
     @lngs = []
     @names = []
@@ -19,7 +20,7 @@ class ShopsController < ApplicationController
       @addresses.push(shop.address)
       @categories.push(shop.category)
     end
-    
+
   end
 
   # GET /shops/1
