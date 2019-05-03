@@ -10,13 +10,16 @@ class ShopsController < ApplicationController
     @lngs = []
     @names = []
     @addresses = []
+    @categories = []
 
     @shops.each do |shop|
       @lats.push(shop.latitude)
       @lngs.push(shop.longitude)
       @names.push(shop.name)
       @addresses.push(shop.address)
+      @categories.push(shop.category)
     end
+    
   end
 
   # GET /shops/1
