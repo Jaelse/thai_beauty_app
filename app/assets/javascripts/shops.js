@@ -47,7 +47,7 @@ function initMap(lat, lng, names, categories) {
         anchor: new google.maps.Point(0, 32)
       };
 
-    for (var i = 0; i < 1000; i++) {
+    for (var i = 0; i < names.length ; i++) {
         var icn = 'icons/spa.png';
         switch(categories[i]){
             case "spa and massage":
