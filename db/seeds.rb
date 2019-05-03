@@ -8,7 +8,7 @@
 
 category = ['spa and massage', 'nails', 'hair removal','barbershop']
 
-for i in 0..1000
+for i in 0..100
     lat =  rand(6000..9000) * 0.0001
     lat = lat + 13.000001
     lat = lat.round(6)
