@@ -5,14 +5,18 @@
           initMap(<%=@lats.to_json.html_safe%>, <%=@lngs.to_json.html_safe%>, <%=@names.to_json.html_safe%>, <%=@categories.to_json.html_safe%>)
       });
       </script>
-
-      <%= javascript_include_tag( 'alert("hellow")' ) %>
-
   <% end %>
 
   <p id="notice"><%= notice %></p>
 
   <h1>Shops</h1>
+<script>
+      document.addEventListener("DOMContentLoaded", function(){
+          initMap(<%=@lats.to_json.html_safe%>, <%=@lngs.to_json.html_safe%>, <%=@names.to_json.html_safe%>, <%=@categories.to_json.html_safe%>)
+      });
+      </script>
+
+
 
   <p>
       <div id="map"></div>
